@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "hello-world": {
+      "type": "hello-world"
+    }
+  },
+  "order": ["hello-world"]
+}
