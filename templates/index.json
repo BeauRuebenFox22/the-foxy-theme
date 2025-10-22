@@ -4,5 +4,7 @@
       "type": "hello-world"
     }
   },
-  "order": ["hello-world"]
+  "order": [
+    "hello-world"
+  ]
 }

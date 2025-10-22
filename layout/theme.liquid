@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
   <head>
-    <meta charset="UTF-8">
-    <title>{{ page_title }}</title>
-    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ content_for_header }}
   </head>
   <body>
-    <div class="main">
-      {{ content_for_layout }}
-    </div>
-    <script src="{{ 'entry.js' | asset_url }}"></script>
+    {{ content_for_layout }}
   </body>
 </html>
